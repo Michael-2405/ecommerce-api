@@ -3,10 +3,6 @@ package com.michael.ecommerce.dto;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import java.time.LocalDateTime;
 
-/**
- * Standard error response returned by the API on failures.
- * All errors follow this structure for consistency.
- */
 @Schema(description = "Standard error response")
 public class ErrorResponse {
 

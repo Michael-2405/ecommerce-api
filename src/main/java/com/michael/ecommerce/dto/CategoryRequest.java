@@ -4,13 +4,9 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
-/**
- * DTO for creating or updating a category.
- * Contains validation constraints and OpenAPI documentation.
- */
-
 @Schema(description = "Request payload for creating or updating a category")
 public class CategoryRequest {
+
   @NotBlank(message = "The name is required")
   @Size(min = 2, max = 100, message = "The name must contain between 2 and 100 characters")
   @Schema(description = "Category name", example = "Electronics", required = true)

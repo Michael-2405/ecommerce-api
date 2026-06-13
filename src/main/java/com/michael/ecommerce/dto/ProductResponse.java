@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 
 @Schema(description = "Product data returned by the API")
 public class ProductResponse {
+
     @Schema(description = "Product ID", example = "1")
     public Long id;
 

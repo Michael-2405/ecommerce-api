@@ -5,13 +5,6 @@ import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.ext.ExceptionMapper;
 import jakarta.ws.rs.ext.Provider;
 
-/**
- * Global exception handler for the API.
- * Intercepts exceptions thrown anywhere in the application
- * and converts them into clean, consistent HTTP responses.
- *
- * Without this, Quarkus returns 500 for all unhandled exceptions.
- */
 @Provider
 public class GlobalExceptionMapper implements ExceptionMapper<RuntimeException> {
 

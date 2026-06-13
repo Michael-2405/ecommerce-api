@@ -12,11 +12,6 @@ import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 import java.util.List;
 
-/**
- * REST resource for category management.
- * This layer only handles HTTP concerns:
- * receiving requests, delegating to the service, returning responses.
- */
 @Path("/api/categories")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)

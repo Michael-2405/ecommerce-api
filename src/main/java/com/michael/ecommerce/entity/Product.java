@@ -2,16 +2,17 @@ package com.michael.ecommerce.entity;
 
 import jakarta.persistence.*;
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 import java.util.List;
 
-/**
- * Represents a product in the e-commerce system.
- * Each product belongs to exactly one category (@ManyToOne).
- */
 @Entity
 @Table(name = "products")
-public class Product extends BaseEntity{
+public class Product extends BaseEntity {
+
+    @Column(name = "name", nullable = false, length = 150)
+    public String name;
+
+    @Column(name = "description", length = 500)
+    public String description;
 
     @Column(name = "price", nullable = false, precision = 10, scale = 2)
     public BigDecimal price;

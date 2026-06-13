@@ -4,11 +4,6 @@ import com.michael.ecommerce.entity.Category;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import java.time.LocalDateTime;
 
-/**
- * DTO for returning category data to the client.
- * Never exposes the entity directly — this controls
- * exactly what fields the API returns.
- */
 @Schema(description = "Category data returned by the API")
 public class CategoryResponse {
 
@@ -30,12 +25,6 @@ public class CategoryResponse {
   @Schema(description = "Last update timestamp")
   public LocalDateTime updatedAt;
 
-  // ─── Factory method ──────────────────────────────────────
-
-  /**
-   * Converts a Category entity into a CategoryResponse DTO.
-   * This is the only place where the mapping happens.
-   */
   public static CategoryResponse from(Category category) {
     CategoryResponse response = new CategoryResponse();
     response.id          = category.id;
