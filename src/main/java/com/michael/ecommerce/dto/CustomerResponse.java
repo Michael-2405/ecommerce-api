@@ -34,14 +34,14 @@ public class CustomerResponse {
 
     public static CustomerResponse from (Customer customer) {
         CustomerResponse response = new CustomerResponse();
-        response.id = customer.id;
-        response.name = customer.name;
-        response.lastName = customer.lastName;
-        response.email = customer.email;
-        response.phone = customer.phone;
-        response.address = customer.address;
-        response.createdAt = customer.createdAt;
-        response.updatedAt = customer.updatedAt;
+        response.id         = customer.id;
+        response.name       = customer.name;
+        response.lastName   = customer.lastName;
+        response.email      = customer.email;
+        response.phone      = customer.phone;
+        response.address    = customer.address;
+        response.createdAt  = customer.createdAt;
+        response.updatedAt  = customer.updatedAt;
         return response;
     }
 }

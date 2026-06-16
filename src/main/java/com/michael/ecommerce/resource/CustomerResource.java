@@ -30,7 +30,7 @@ public class CustomerResource {
 
     @GET
     @Path("/{id}")
-    @Operation(summary = "Get customer by ID", description = "Returns single customer by its ID")
+    @Operation(summary = "Get customer by ID", description = "Returns a single customer by its ID")
     public CustomerResponse find(@PathParam("id") Long id) {
         return  customerService.findById(id);
     }
